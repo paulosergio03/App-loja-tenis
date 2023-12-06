@@ -45,8 +45,29 @@ export default function Home() {
       <Text style={styles.text}>LANÇAMENTOS</Text>
 
       <View style={{flexDirection: 'row', justifyContent: 'space-around' }}>
-        <Shoes/>
-        <Shoes/>
+        <Shoes img={require('../../assets/1.png')} cost="R$149,99">
+          Nike Air max
+        </Shoes>
+        <Shoes img={require('../../assets/2.png')} cost="R$199,90">
+          Nike Downshifter 10
+        </Shoes>
+      </View>
+
+      <View style={{flexDirection: 'row', justifyContent: 'space-around' }}>
+        <Shoes img={require('../../assets/3.png')} cost="R$99,99">
+        Tênis Adidas Runfalcon 
+        </Shoes>
+        <Shoes img={require('../../assets/4.png')} cost="R$199,90">
+         Adidas Pureboost
+        </Shoes>
+      </View>
+      <View style={{flexDirection: 'row', justifyContent: 'space-around' }}>
+        <Shoes img={require('../../assets/5.png')} cost="R$399,99">
+         Adidas Grand Court 2.0
+        </Shoes>
+        <Shoes img={require('../../assets/6.png')} cost="R$299,90">
+         Adidas Response Runner
+        </Shoes>
       </View>
 
     </ScrollView>
