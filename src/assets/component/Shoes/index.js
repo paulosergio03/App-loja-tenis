@@ -3,15 +3,16 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 export default function Shoes(props) {
 
+    {/*Função para filtrar o tamanho do texto do nome do produto*/}
     function filterDesc(desc){
         if(desc.length < 27){
             return desc;
         }
-        return `${desc.subatring(0, 23)}...`
+        return `${desc.substring(0, 23)}...`
     }
 
  return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={props.onClick}>
      <Image
      source={props.img}
      style={styles.shoesImg}
